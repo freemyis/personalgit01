@@ -1,0 +1,11 @@
+D:\workspace\personTestFolder\huiwenChar\bin\Debug\netcoreapp2.2\huiwenChar.deps.json
+D:\workspace\personTestFolder\huiwenChar\bin\Debug\netcoreapp2.2\huiwenChar.runtimeconfig.json
+D:\workspace\personTestFolder\huiwenChar\bin\Debug\netcoreapp2.2\huiwenChar.runtimeconfig.dev.json
+D:\workspace\personTestFolder\huiwenChar\bin\Debug\netcoreapp2.2\huiwenChar.dll
+D:\workspace\personTestFolder\huiwenChar\bin\Debug\netcoreapp2.2\huiwenChar.pdb
+D:\workspace\personTestFolder\huiwenChar\obj\Debug\netcoreapp2.2\huiwenChar.csprojAssemblyReference.cache
+D:\workspace\personTestFolder\huiwenChar\obj\Debug\netcoreapp2.2\huiwenChar.csproj.CoreCompileInputs.cache
+D:\workspace\personTestFolder\huiwenChar\obj\Debug\netcoreapp2.2\huiwenChar.AssemblyInfoInputs.cache
+D:\workspace\personTestFolder\huiwenChar\obj\Debug\netcoreapp2.2\huiwenChar.AssemblyInfo.cs
+D:\workspace\personTestFolder\huiwenChar\obj\Debug\netcoreapp2.2\huiwenChar.dll
+D:\workspace\personTestFolder\huiwenChar\obj\Debug\netcoreapp2.2\huiwenChar.pdb
