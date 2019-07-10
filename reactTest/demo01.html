@@ -10,18 +10,10 @@
 <body>
     <div id="example"></div>
     <script type="text/babel">
-        class HelloMessage extends React.Component {
-            render() {
-                return (
-                <div>
-                    Hello {this.props.name}
-                </div>
-                );
-            }
-        }
-
+        const name = "World";
+       const ssr = <div>Hello {name}</div>;
         ReactDOM.render(
-        <HelloMessage name="World" />,
+        ssr,
         document.getElementById('example')
         );
     </script>
