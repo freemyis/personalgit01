@@ -8,21 +8,26 @@
     <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
 </head>
 <body>
-    <div id="example"></div>
+    <div id="root"></div>
     <script type="text/babel">
-        class HelloMessage extends React.Component {
-            render() {
-                return (
-                <div>
-                    Hello {this.props.name}
-                </div>
-                );
-            }
+        function formatter(user) {
+            return user.firstname + " " + user.lastname;
         }
 
+        const user = {
+            firstname: 'roman',
+            lastname: 'hanker'
+        };
+
+        const element = (
+            <h1>
+                Hello,{formatter(user)}!
+            </h1>
+        );
+
         ReactDOM.render(
-        <HelloMessage name="World" />,
-        document.getElementById('example')
+        element,
+        document.getElementById('root')
         );
     </script>
 
