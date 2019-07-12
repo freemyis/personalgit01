@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        class Welcome extends React.Component{
+        render() {
+        return <h1>hello, {this.props.name}</h1>;
+        }
+        }
+
+        function App() {
+        return (
+               <div>
+                   <Welcome name="sari"></Welcome>
+                   <Welcome name="kasai"></Welcome>
+                   <Welcome name="hasagei"></Welcome>
+               </div>
+        )
+        }
+        const dev = document.getElementById("root");
+        ReactDOM.render(
+        <App></App>,
+        dev
+        );
+
+    </script>
+
+</body>
+</html>
