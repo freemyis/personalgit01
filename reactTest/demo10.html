@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello React!  封装时钟外观</title>
+
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+    <div ssr="name1" class="s" style="border:dashed"></div>
+    <div ssr="name2" class="s" style="border:dashed"></div><div ssr="name3" class="s" style="border:dashed"></div>
+
+
+    <div id="root"></div>
+    <script>
+        window.onload = function () {
+            var zz = document.getElementsByClassName("s");
+            for (var i = 0, len = zz.length; i < len; i++) {
+                console.log(zz[i].getAttribute("ssr"));
+                //zz[i].style.color = "red"
+            }
+            zz[0].style.color = "red";
+            console.log(zz[0].style.color="red");
+        }
+        
+    </script>
+    <script type="text/babel">
+
+        class Clock extends React.Component {
+        constructor(props){
+        super(props);
+        this.state = {date:new Date()};
+        }
+
+        componentDidMount() {
+        this.timerID = setInterval(
+        () => this.tick(),
+        1000
+        );
+        }
+
+        componentWillUnmount() {
+        clearInterval(this.timerID);
+        }
+
+        tick() {
+        this.setState({
+        date: new Date()
+        });
+        }
+
+        render() {
+        return(
+        <div>
+            <h1>Hello World!!!</h1>
+            <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+        </div>
+        );
+        }
+        }
+
+        ReactDOM.render(
+        <Clock></Clock>,
+        document.getElementById("root")
+        );
+
+
+    </script>
+
+</body>
+</html>
