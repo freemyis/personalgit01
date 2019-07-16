@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello React!</title>
+
+    <script src="../build/react.development.js"></script>
+    <script src="../build/react-dom.development.js"></script>
+    <script src="../build/babel.min.js"></script>
+
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <script type="text/babel">
+        var HelloMessage = React.createClass({
+        render: function() {
+        return
+        <h1>Hello {this.props.name}</h1>;
+        }
+        });
+
+        ReactDOM.render(
+        <HelloMessage name="John" />,
+        document.getElementById('root')
+        );
+    </script>
+
+</body>
+</html>
