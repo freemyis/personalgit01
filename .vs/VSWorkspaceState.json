@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\build",
     "\\jsErl",
     "\\reactTest"
   ],
-  "SelectedNode": "\\reactTest\\HelloWorld.html",
+  "SelectedNode": "\\build\\react.js",
   "PreviewInSolutionExplorer": false
 }

@@ -15,12 +15,24 @@
     <script type="text/babel">
         class HelloMessage extends React.Component {
         render() {
-        return (<h1>Hello {this.props.name}</h1>);
+        return (
+        <div>
+            {
+            React.Children.map(this.props.children, function(child){
+            return <div>{child}</div>
+            })
+            }
+        </div>
+        );
         }
         }
 
         ReactDOM.render(
-        <HelloMessage name="John" />,
+        <HelloMessage>
+            <h1>s1</h1>
+            <h2>s2</h2>
+            <h3>s3</h3>
+            </HelloMessage>,
         document.getElementById("root")
         );
     </script>
